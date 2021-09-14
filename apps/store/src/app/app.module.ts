@@ -1,5 +1,5 @@
 import { StoreUtilFormattersModule } from '@bg-hoard/store/util-formatters';
- import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { StoreUiSharedModule } from '@bg-hoard/store/ui-shared';
 import { AppComponent } from './app.component';
@@ -11,10 +11,21 @@ import { FormatRatingPipe } from './format-rating.pipe';
   declarations: [AppComponent, FormatRatingPipe],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([], { initialNavigation: 'enabledBlocking' }),
+    RouterModule.forRoot(
+      [
+        {
+          path: 'game/:id',
+          loadChildren: () =>
+            import('@bg-hoard/store/feature-game-detail').then(
+              (module) => module.StoreFeatureGameDetailModule
+            ),
+        },
+      ],
+      { initialNavigation: 'enabledBlocking' }
+    ),
     MatCardModule,
     StoreUiSharedModule,
-    StoreUtilFormattersModule
+    StoreUtilFormattersModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
