@@ -1,6 +1,8 @@
 
 
 # BgHoard
+This project was part of Labs from a workshopat nx-conf 2021 [Nx-workshop](https://github.com/nrwl/nx-workshop).
+
 
 This project was generated using [Nx](https://nx.dev).
 
