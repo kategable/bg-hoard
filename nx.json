@@ -32,32 +32,5 @@
       }
     ]
   },
-  "projects": {
-    "api": {
-      "tags": []
-    },
-    "store": {
-      "tags": []
-    },
-    "store-e2e": {
-      "tags": [],
-      "implicitDependencies": ["store"]
-    },
-    "store-feature-game-detail": {
-      "tags": []
-    },
-    "store-ui-shared": {
-      "tags": []
-    },
-    "store-ui-shared-e2e": {
-      "tags": [],
-      "implicitDependencies": ["store-ui-shared"]
-    },
-    "store-util-formatters": {
-      "tags": []
-    },
-    "util-interface": {
-      "tags": []
-    }
-  }
+  "projects": {}
 }
