@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { FormatRatingPipe } from './format-rating.pipe';
-
+import {HttpClientModule} from '@angular/common/http'
 @NgModule({
   declarations: [AppComponent, FormatRatingPipe],
   imports: [
@@ -26,6 +26,7 @@ import { FormatRatingPipe } from './format-rating.pipe';
     MatCardModule,
     StoreUiSharedModule,
     StoreUtilFormattersModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
