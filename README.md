@@ -7,6 +7,9 @@ This project was part of Labs from a workshopat nx-conf 2021 [Nx-workshop](https
 This project was generated using [Nx](https://nx.dev).
 
 surge token: 8db3882583b7a4ead1e2e20467788b5d
+nx generate run-commands deploy --project=store --command="surge dist/apps/store https://bg-hoard-katesky-123.surge.sh --token 8db3882583b7a4ead1e2e20467788b5d"
+
+surge dist/apps/store https://bg-hoard-katesky-123.surge.sh --token 8db3882583b7a4ead1e2e20467788b5d
 
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
 
