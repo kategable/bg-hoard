@@ -1,7 +1,9 @@
 name: Run CI checks
 
 on: [pull_request]
-
+env:
+  NX_BRANCH: ${{ github.event.number }}
+  
 jobs:
   build:
     runs-on: ubuntu-latest
