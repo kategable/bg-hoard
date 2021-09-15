@@ -12,35 +12,33 @@
         "index": 0
       }
     },
-      "directory": {
-        "type": "string",
-        "description": "Library directory",
-        "enum": ["api", "store", "shared"],
-        "$default": {
-          "$source": "argv",
-          "index": 0
-        },
-        "x-prompt":{
-          "message": "Which directory library would you like to generate?",
-          "type": "list",
-          "items": [
-            {
-              "value": "store",
-              "label": "Store App"
-            },
-            {
-              "value": "api",
-              "label": "Main Api"
-            },
-            {
-              "value": "shared",
-              "label": "Shared library"
-            }
-          ]
-        }
-
-  }},
-
+    "directory": {
+      "type": "string",
+      "description": "Library directory",
+      "enum": ["api", "store", "shared"],
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": {
+        "message": "Which directory library would you like to generate?",
+        "type": "list",
+        "items": [
+          {
+            "value": "api",
+            "label": "api"
+          },
+          {
+            "value": "store",
+            "label": "store"
+          },
+          {
+            "value": "shared",
+            "label": "shared"
+          }
+        ]
+      }
+    }
+  },
   "required": ["name", "directory"]
 }
-
