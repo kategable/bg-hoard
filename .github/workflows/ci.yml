@@ -1,4 +1,4 @@
-ame: Run CI checks # The name will show up on the GitHub Actions dashboard
+name: Run CI checks # The name will show up on the GitHub Actions dashboard
 
 on: [pull_request] # This workflow will run only on Pull Requests
 
@@ -17,4 +17,3 @@ jobs:
       - uses: actions/checkout@v1
       - uses: bahmutov/npm-install@v1
       - run: npm run nx test api
-  
